@@ -1,0 +1,117 @@
+.story {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(55, 55, 158, 0.7),
+      rgba(145, 234, 228, 0.7)
+    ),
+    url("../img/stroy-backgroud.gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+
+  // @media screen and (max-width: $med) {
+  //   height: auto;
+  //   min-height: auto;
+  // }
+
+  &__h2 {
+    text-align: center;
+    padding: 5rem;
+    background-image: linear-gradient(#a8ff78, #78ffd6);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__about {
+    width: 100%;
+    height: 100%;
+    // background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-con {
+      width: 60%;
+      height: 30rem;
+      background-image: linear-gradient(to right, #eb5757, #000000);
+      overflow: hidden;
+      transform: skewX(-20deg);
+      box-shadow: 0 1.5rem 2rem grey;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      margin-bottom: 4rem;
+      transition: all 0.4s;
+
+      @media screen and (max-width: $large-med) {
+        width: 70%;
+        height: 40rem;
+      }
+      @media screen and (max-width: $small-very) {
+        width: 75%;
+        height: 50rem;
+      }
+
+      & > * {
+        transform: skewX(20deg);
+      }
+
+      &-title {
+        grid-column: 1 / span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        top: 2rem;
+
+        h4 {
+          color: #f2fcfe;
+          font-size: 4rem;
+        }
+
+        &-ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          // background-color: white;
+
+          li {
+            color: rgb(149, 149, 218);
+            padding: 1rem;
+            font-size: 2rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-bottom: 1px solid grey;
+          }
+        }
+      }
+
+      &-img {
+        grid-column: 4 / -1;
+        width: 120%;
+        height: 100%;
+        transition: all 0.4s;
+        display: flex;
+        justify-content: center;
+        background-color: yellow;
+        align-items: center;
+
+        &-web {
+          position: relative;
+          right: 10%;
+          text-transform: uppercase;
+          font-size: 3rem;
+          color: black;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}

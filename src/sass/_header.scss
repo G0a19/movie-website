@@ -1,0 +1,127 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  // background-image: linear-gradient(to right bottom, rgba(127,127,213, 1) 50%, rgba(145,234,228, 1) 50%);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(127, 127, 213, 0.8),
+      rgba(145, 234, 228, 0.8)
+    ),
+    url("../img/notepad-background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+  z-index: 10;
+
+  &__title {
+    // grid-column: 1 / span 4;
+    // grid-row: 1/ span 3;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (max-width: $med) {
+      grid-column: 1 / -1;
+      grid-row: 1 / span 3;
+    }
+  }
+
+  &__h1 {
+    background-image: linear-gradient(#a8ff78, #78ffd6);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    animation: right 0.8s;
+
+    @media screen and (max-width: $large) {
+      text-align: center;
+    }
+  }
+
+  &__h4 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3rem;
+    animation: left 0.8s;
+  }
+
+  &__btn {
+    animation: up 0.8s;
+  }
+
+  img {
+    width: 20rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+  }
+
+  &__img {
+    grid-column: 4 / -1;
+    grid-row: 2 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: $med) {
+      grid-column: 1 / -1;
+      grid-row: 4 / span 2;
+    }
+
+    @media screen and (max-width: $small-very) {
+      grid-column: 1 / -1;
+      grid-row: 3 / span 3;
+    }
+
+    &-javascript {
+      position: absolute;
+      transform: translateY(-13rem);
+      z-index: 3;
+      animation: show 0.3s;
+
+      &:hover {
+        transform: scale(1.4) translateY(-13rem);
+        z-index: 99;
+        border: 2px solid rgb(132, 192, 132);
+      }
+    }
+
+    &-css {
+      position: absolute;
+      transform: translateX(-7rem);
+      z-index: 2;
+
+      &:hover {
+        transform: scale(1.4) translateX(-7rem);
+        z-index: 99;
+        border: 2px solid rgb(132, 192, 132);
+      }
+    }
+
+    &-html {
+      position: absolute;
+      transform: translateX(7rem);
+
+      &:hover {
+        transform: translateX(7rem) scale(1.4);
+        z-index: 99;
+        border: 2px solid rgb(132, 192, 132);
+      }
+    }
+  }
+}

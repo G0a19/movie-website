@@ -1,0 +1,25 @@
+.title-1 {
+  font-size: 12rem;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media screen and (max-width: $small-very) {
+    font-size: 15rem;
+  }
+}
+
+.title-2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.title-4 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @media screen and (max-width: $small-very) {
+    font-size: 5rem;
+  }
+}

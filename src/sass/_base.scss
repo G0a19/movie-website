@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+$large-big: 78.125em; //1250
+$large: 66.875em; // 1070
+$large-med: 56.25em; // 900
+$med: 43.75em; // 700
+$small: 34.375em; //550
+$small-very: 26.25em; //420
+$small-super: 22.5em; //360
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media screen and (max-width: $large-big) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $med) {
+    font-size: 40%;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 35%;
+  }
+
+  @media screen and (max-width: $small-very) {
+    font-size: 27%;
+  }
+  @media screen and (max-width: $small-super) {
+    font-size: 23%;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
