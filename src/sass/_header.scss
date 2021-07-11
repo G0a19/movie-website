@@ -33,7 +33,7 @@
     align-items: center;
     flex-direction: column;
 
-    @media screen and (max-width: $med) {
+    @media only screen and (max-width: $med) {
       grid-column: 1 / -1;
       grid-row: 1 / span 3;
     }
@@ -46,7 +46,7 @@
     margin-bottom: 2rem;
     animation: right 0.8s;
 
-    @media screen and (max-width: $large) {
+    @media only screen and (max-width: $large) {
       text-align: center;
     }
   }
@@ -78,12 +78,12 @@
     align-items: center;
     position: relative;
 
-    @media screen and (max-width: $med) {
+    @media only screen and (max-width: $med) {
       grid-column: 1 / -1;
       grid-row: 4 / span 2;
     }
 
-    @media screen and (max-width: $small-very) {
+    @media only screen and (max-width: $small-very) {
       grid-column: 1 / -1;
       grid-row: 3 / span 3;
     }

@@ -11,16 +11,16 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 20rem);
 
-  @media screen and (max-width: $large) {
+  @media only screen and (max-width: $large) {
     grid-template-rows: 10rem 20rem repeat(3, 80rem) repeat(2, 10rem);
   }
 
-  @media screen and (max-width: $large-med) {
+  @media only screen and (max-width: $large-med) {
     margin-top: -25rem;
     grid-template-rows: 15rem 20rem repeat(3, 80rem) repeat(2, 10rem);
   }
 
-  @media screen and (max-width: $small-very) {
+  @media only screen and (max-width: $small-very) {
     margin-top: -35rem;
     grid-template-rows: 25rem 20rem repeat(3, 80rem) repeat(2, 10rem);
   }
@@ -36,7 +36,7 @@
     -webkit-background-clip: text;
     color: transparent;
 
-    @media screen and (max-width: $large) {
+    @media only screen and (max-width: $large) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -96,7 +96,7 @@
   justify-content: space-around;
   align-items: flex-start;
 
-  @media screen and (max-width: $large) {
+  @media only screen and (max-width: $large) {
     flex-direction: column;
     align-items: center;
   }
@@ -112,7 +112,7 @@
   cursor: pointer;
   border-radius: 5px;
 
-  @media screen and (max-width: $large) {
+  @media only screen and (max-width: $large) {
     width: 70rem;
     height: 30%;
   }

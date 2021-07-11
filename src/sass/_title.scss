@@ -3,7 +3,7 @@
   text-transform: uppercase;
   font-weight: 700;
 
-  @media screen and (max-width: $small-very) {
+  @media only screen and (max-width: $small-very) {
     font-size: 15rem;
   }
 }
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   font-weight: 400;
 
-  @media screen and (max-width: $small-very) {
+  @media only screen and (max-width: $small-very) {
     font-size: 5rem;
   }
 }

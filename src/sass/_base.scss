@@ -18,22 +18,22 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-  @media screen and (max-width: $large-big) {
+  @media only screen and (max-width: $large-big) {
     font-size: 50%;
   }
 
-  @media screen and (max-width: $med) {
+  @media only screen and (max-width: $med) {
     font-size: 40%;
   }
 
-  @media screen and (max-width: $small) {
+  @media only screen and (max-width: $small) {
     font-size: 35%;
   }
 
   @media screen and (max-width: $small-very) {
     font-size: 27%;
   }
-  @media screen and (max-width: $small-super) {
+  @media only screen and (max-width: $small-super) {
     font-size: 23%;
   }
 }
