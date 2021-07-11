@@ -48,12 +48,12 @@
       transition: all 0.4s;
 
       @media only screen and (max-width: $large-med) {
-        width: 70%;
-        height: 40rem;
+        width: 70% !important;
+        height: 40rem !important;
       }
       @media only screen and (max-width: $small-very) {
-        width: 75%;
-        height: 50rem;
+        width: 75% !important;
+        height: 50rem !important;
       }
 
       & > * {

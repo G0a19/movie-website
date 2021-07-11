@@ -4,7 +4,7 @@
   font-weight: 700;
 
   @media only screen and (max-width: $small-very) {
-    font-size: 15rem;
+    font-size: 15rem !important;
   }
 }
 
@@ -20,6 +20,6 @@
   font-weight: 400;
 
   @media only screen and (max-width: $small-very) {
-    font-size: 5rem;
+    font-size: 5rem !important;
   }
 }

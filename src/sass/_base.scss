@@ -19,22 +19,22 @@ html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $large-big) {
-    font-size: 50%;
+    font-size: 50% !important ;
   }
 
   @media only screen and (max-width: $med) {
-    font-size: 40%;
+    font-size: 40% !important ;
   }
 
   @media only screen and (max-width: $small) {
-    font-size: 35%;
+    font-size: 35% !important ;
   }
 
   @media screen and (max-width: $small-very) {
-    font-size: 27%;
+    font-size: 27% !important ;
   }
   @media only screen and (max-width: $small-super) {
-    font-size: 23%;
+    font-size: 23% !important ;
   }
 }
 
