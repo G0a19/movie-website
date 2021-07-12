@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   // background-image: linear-gradient(to right bottom, rgba(127,127,213, 1) 50%, rgba(145,234,228, 1) 50%);
   background-image: linear-gradient(
       to right bottom,

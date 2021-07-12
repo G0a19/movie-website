@@ -10,6 +10,10 @@ const storyCon = document.querySelectorAll(".story__about-con");
 const title2H = title2.getBoundingClientRect().height;
 const titleHeaderHeight = titleHeader.getBoundingClientRect().height;
 
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
 let show = 0;
 
 const showCards = function (entries, observer) {
