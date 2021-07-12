@@ -58,6 +58,10 @@
   text-transform: uppercase;
   //   left: 40%;
   animation: title 0.8s forwards;
+
+  @media only screen and (max-width: $med) {
+    font-size: 4rem;
+  }
 }
 
 @keyframes title {
@@ -82,16 +86,28 @@
 
 .show-story-left {
   animation: show-left 0.4s forwards;
+
+  @media only screen and (max-width: $small) {
+    animation: show-left 0.4s;
+  }
 }
 
 @keyframes show-left {
   0% {
     opacity: 0;
     transform: skewX(-20deg) translateX(10rem);
+
+    @media only screen and (max-width: $small) {
+      transform: skewX(0deg) translateX(10rem);
+    }
   }
 
   100% {
     opacity: 1;
     transform: skewX(-20deg) translateX(0);
+
+    @media only screen and (max-width: $small) {
+      transform: skewX(0deg) translateX(0rem);
+    }
   }
 }

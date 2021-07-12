@@ -1,6 +1,7 @@
 .story {
   width: 100%;
   min-height: 100vh;
+  font-size: 3.5rem;
   min-height: calc(var(--vh, 1vh) * 100);
   background-image: linear-gradient(
       to right bottom,
@@ -12,6 +13,15 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+
+  @media only screen and (max-width: $large) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: $small) {
+    min-height: auto;
+    height: auto;
+  }
 
   // @media screen and (max-width: $med) {
   //   height: auto;
@@ -48,16 +58,24 @@
       transition: all 0.4s;
 
       @media only screen and (max-width: $large-med) {
-        width: 70% !important;
-        height: 40rem !important;
+        width: 70%;
+        height: 40rem;
       }
-      @media only screen and (max-width: $small-very) {
-        width: 75% !important;
-        height: 50rem !important;
+
+      @media only screen and (max-width: $med) {
+        transform: skewX(0deg);
+      }
+
+      @media only screen and (max-width: $small) {
+        width: 80%;
       }
 
       & > * {
         transform: skewX(20deg);
+
+        @media only screen and (max-width: $med) {
+          transform: skewX(0deg);
+        }
       }
 
       &-title {
@@ -69,9 +87,32 @@
         position: relative;
         top: 2rem;
 
+        @media only screen and (max-width: $large-med) {
+          justify-content: center;
+        }
+
         h4 {
           color: #f2fcfe;
           font-size: 4rem;
+
+          @media only screen and (max-width: $large) {
+            margin-left: 0.4rem;
+            font-size: 3rem;
+          }
+
+          @media only screen and (max-width: $med) {
+            font-size: 2.7rem;
+            margin-left: 3rem;
+          }
+
+          @media screen and (max-width: $small) {
+            font-size: 2rem;
+            margin: 0;
+          }
+
+          @media only screen and (max-width: $small-very) {
+            font-size: 2rem;
+          }
         }
 
         &-ul {
@@ -90,6 +131,18 @@
             text-transform: uppercase;
             font-weight: 800;
             border-bottom: 1px solid grey;
+
+            @media only screen and (max-width: $large) {
+              font-size: 1.5rem;
+            }
+
+            @media only screen and (max-width: $med) {
+              font-size: 1.3rem;
+            }
+
+            @media screen and (max-width: $small) {
+              font-size: 1.2rem;
+            }
           }
         }
       }
@@ -111,6 +164,10 @@
           font-size: 3rem;
           color: black;
           font-weight: 800;
+
+          @media only screen and (max-width: $small) {
+            font-size: 2.5rem;
+          }
         }
       }
     }

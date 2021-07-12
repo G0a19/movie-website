@@ -2,9 +2,14 @@
   font-size: 12rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 
-  @media only screen and (max-width: $small-very) {
-    font-size: 15rem !important;
+  @media only screen and (max-width: $med) {
+    font-size: 8rem;
+  }
+
+  @media screen and (max-width: $small-very) {
+    font-size: 7rem;
   }
 }
 
@@ -12,14 +17,14 @@
   font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media only screen and (max-width: $med) {
+    font-size: 4rem;
+  }
 }
 
 .title-4 {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 400;
-
-  @media only screen and (max-width: $small-very) {
-    font-size: 5rem !important;
-  }
 }

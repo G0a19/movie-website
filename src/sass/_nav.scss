@@ -8,6 +8,10 @@
     rgba(65, 67, 69, 0.8)
   );
   z-index: 9999;
+
+  @media only screen and (max-width: $med) {
+    height: 7rem;
+  }
   // display: none;
 
   &__checkbox {
@@ -16,6 +20,15 @@
     width: 10rem;
     height: 10rem;
     opacity: 0;
+
+    @media only screen and (max-width: $med) {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    @media screen and (max-width: $small-very) {
+      left: 80%;
+    }
   }
 
   &__button {
@@ -29,6 +42,15 @@
     align-items: center;
     cursor: pointer;
     z-index: 9999;
+
+    @media only screen and (max-width: $med) {
+      height: 7rem;
+      width: 7rem;
+    }
+
+    @media screen and (max-width: $small-very) {
+      left: 80%;
+    }
   }
 
   &__icon {
@@ -41,6 +63,11 @@
     transition: all 0.4s;
     z-index: 9999;
 
+    @media only screen and (max-width: $med) {
+      height: 4px;
+      width: 4rem;
+    }
+
     &::before {
       content: "";
       display: inline-block;
@@ -50,6 +77,11 @@
       display: inline-block;
       position: absolute;
       top: -1.6rem;
+
+      @media only screen and (max-width: $med) {
+        height: 4px;
+        width: 4rem;
+      }
     }
 
     &::after {
@@ -62,6 +94,11 @@
       position: absolute;
       top: 1.6rem;
       right: 0rem;
+
+      @media only screen and (max-width: $med) {
+        height: 4px;
+        width: 4rem;
+      }
     }
   }
 
@@ -92,6 +129,15 @@
     justify-content: center;
     align-items: center;
     z-index: 9998;
+
+    @media only screen and (max-width: $med) {
+      height: 7rem;
+      width: 7rem;
+    }
+
+    @media screen and (max-width: $small-very) {
+      left: 80%;
+    }
 
     &-ul {
       list-style: none;

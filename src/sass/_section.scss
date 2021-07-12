@@ -12,17 +12,18 @@
   grid-template-rows: repeat(6, 20rem);
 
   @media only screen and (max-width: $large) {
-    grid-template-rows: 10rem 20rem repeat(3, 80rem) repeat(2, 10rem) !important;
+    grid-template-rows: 10rem 20rem repeat(3, 80rem) repeat(2, 10rem);
   }
 
   @media only screen and (max-width: $large-med) {
     margin-top: -25rem;
-    grid-template-rows: 15rem 20rem repeat(3, 80rem) repeat(2, 10rem) !important;
+    grid-template-rows: 15rem 20rem repeat(3, 80rem) repeat(2, 10rem);
   }
 
   @media only screen and (max-width: $small-very) {
-    margin-top: -35rem;
-    grid-template-rows: 25rem 20rem repeat(3, 80rem) repeat(2, 10rem) !important;
+    margin-top: -15rem;
+    grid-template-rows: 18rem 10rem repeat(2, 70rem) 20rem;
+    min-height: 50rem;
   }
   // position: relative;
 
@@ -37,9 +38,9 @@
     color: transparent;
 
     @media only screen and (max-width: $large) {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -55,6 +56,11 @@
     text-transform: uppercase;
     transition: all 0.4s;
     // background-image: linear-gradient(#11998e,#38ef7d);
+
+    @media screen and (max-width: $small-very) {
+      grid-row: 5 / 6;
+      justify-content: flex-start;
+    }
 
     &:hover {
       transform: translateY(-1rem);
@@ -97,8 +103,13 @@
   align-items: flex-start;
 
   @media only screen and (max-width: $large) {
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $small-very) {
+    grid-row: 3 / 5;
+    justify-content: space-around;
   }
 }
 
@@ -113,8 +124,21 @@
   border-radius: 5px;
 
   @media only screen and (max-width: $large) {
-    width: 70rem !important;
-    height: 30% !important;
+    width: 70rem;
+    height: 30%;
+  }
+
+  @media only screen and (max-width: $med) {
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: $small) {
+    width: 40rem;
+  }
+
+  @media screen and (max-width: $small-very) {
+    width: 30rem;
+    height: 40rem;
   }
 
   &-front,

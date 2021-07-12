@@ -20,6 +20,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
   z-index: 10;
 
+  @media screen and (max-width: $small) {
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
+  }
+
   &__title {
     // grid-column: 1 / span 4;
     // grid-row: 1/ span 3;
@@ -70,6 +75,14 @@
     cursor: pointer;
     padding: 1rem 1rem;
     border-radius: 50%;
+
+    @media only screen and (max-width: $med) {
+      width: 14rem;
+    }
+
+    @media screen and (max-width: $small-very) {
+      width: 12rem;
+    }
   }
 
   &__img {
@@ -96,10 +109,26 @@
       z-index: 3;
       animation: show 0.3s;
 
+      @media only screen and (max-width: $med) {
+        transform: translateY(-10rem);
+      }
+
+      @media screen and (max-width: $small-very) {
+        transform: translateY(-5rem);
+      }
+
       &:hover {
         transform: scale(1.4) translateY(-13rem);
         z-index: 99;
         border: 2px solid rgb(132, 192, 132);
+
+        @media only screen and (max-width: $med) {
+          transform: scale(1.4) translateY(-10rem);
+        }
+
+        @media only screen and (max-width: $med) {
+          transform: scale(1.4) translateY(-5rem);
+        }
       }
     }
 
@@ -108,10 +137,26 @@
       transform: translateX(-7rem);
       z-index: 2;
 
+      @media only screen and (max-width: $med) {
+        transform: translateX(-4rem);
+      }
+
+      @media screen and (max-width: $small-very) {
+        transform: translate(-3rem, 2rem);
+      }
+
       &:hover {
         transform: scale(1.4) translateX(-7rem);
         z-index: 99;
         border: 2px solid rgb(132, 192, 132);
+
+        @media only screen and (max-width: $med) {
+          transform: scale(1.4) translateX(-4rem);
+        }
+
+        @media screen and (max-width: $small-very) {
+          transform: scale(1.4) translate(-3rem, 2rem);
+        }
       }
     }
 
@@ -119,10 +164,26 @@
       position: absolute;
       transform: translateX(7rem);
 
+      @media only screen and (max-width: $med) {
+        transform: translateX(5rem);
+      }
+
+      @media screen and (max-width: $small-very) {
+        transform: translate(4rem, 2rem);
+      }
+
       &:hover {
         transform: translateX(7rem) scale(1.4);
         z-index: 99;
         border: 2px solid rgb(132, 192, 132);
+
+        @media only screen and (max-width: $med) {
+          transform: scale(1.4) translateX(5rem);
+        }
+
+        @media screen and (max-width: $small-very) {
+          transform: scale(1.4) translate(4rem, 2rem);
+        }
       }
     }
   }

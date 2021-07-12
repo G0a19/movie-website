@@ -11,10 +11,18 @@
     text-transform: uppercase;
     color: white;
     margin-left: 5%;
+
+    @media only screen and (max-width: $med) {
+      margin-left: 10%;
+    }
   }
 
   &__text {
     color: white;
     margin-right: 5%;
+  }
+
+  @media only screen and (max-width: $med) {
+    text-align: center;
   }
 }
