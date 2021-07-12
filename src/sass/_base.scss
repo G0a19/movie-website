@@ -19,22 +19,22 @@ html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $large-big) {
-    font-size: 50% !important ;
+    font-size: 50%;
   }
 
   @media only screen and (max-width: $med) {
-    font-size: 40% !important ;
+    font-size: 40%;
   }
 
   @media only screen and (max-width: $small) {
-    font-size: 35% !important ;
+    font-size: 35%;
   }
 
   @media screen and (max-width: $small-very) {
-    font-size: 27% !important ;
+    font-size: 27%;
   }
   @media only screen and (max-width: $small-super) {
-    font-size: 23% !important ;
+    font-size: 23%;
   }
 }
 
@@ -44,4 +44,9 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   min-height: --webkit-fill-available;
+}
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
 }
