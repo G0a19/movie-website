@@ -20,10 +20,8 @@ const showCards = function (entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.remove("scale");
-      entry.target.classList.add("show-card");
     } else {
       entry.target.classList.add("scale");
-      entry.target.classList.remove("show-card");
     }
   });
 };

@@ -76,10 +76,6 @@
   }
 }
 
-.display {
-  display: none;
-}
-
 .scale {
   transform: scale(0);
 }
@@ -129,23 +125,5 @@
       opacity: 1;
       transform: skewX(0deg) translateX(0);
     }
-  }
-}
-
-///////////////////////////////////// cards
-
-.show-card {
-  animation: show-card 0.4s forwards;
-}
-
-@keyframes show-card {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
   }
 }
