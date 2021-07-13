@@ -57,7 +57,7 @@
   font-size: 5.5rem;
   text-transform: uppercase;
   //   left: 40%;
-  animation: title 0.8s forwards;
+  animation: title 0.8s forwards ease-in-out;
 
   @media only screen and (max-width: $med) {
     font-size: 4rem;
@@ -81,11 +81,11 @@
 }
 
 .scale {
-  transform: scale(0.005);
+  transform: scale(0);
 }
 
 .show-story-left {
-  animation: show-left 0.4s forwards;
+  animation: show-left 0.4s forwards ease-in-out;
 
   @media only screen and (max-width: $small) {
     animation: show-left 0.4s;
