@@ -341,6 +341,7 @@ body {
   .features__con-front, .features__con-back {
     position: absolute;
     border-radius: 5px;
+    transition: all 0.4s;
     top: 0;
     left: 0;
     width: 100%;
