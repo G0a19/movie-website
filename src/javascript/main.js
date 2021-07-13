@@ -1,3 +1,3 @@
-import "./../sass/main.scss";
+import "./../css/style.prefix.css";
 import "./_animation";
 import "./_checkbox";
