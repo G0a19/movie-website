@@ -33,7 +33,7 @@
     width: 100%;
     text-align: center;
     // background-color: white;
-    background-image: linear-gradient(#da4453, #89216b);
+    background-image: linear-gradient(#a8ff78, #78ffd6);
     -webkit-background-clip: text;
     color: transparent;
 
@@ -128,6 +128,7 @@
   backface-visibility: hidden;
   cursor: pointer;
   border-radius: 5px;
+  transform: scale(1);
 
   @media only screen and (max-width: $large) {
     width: 70rem;

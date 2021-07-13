@@ -105,8 +105,7 @@ body {
     .header__img-javascript {
       position: absolute;
       transform: translateY(-13rem);
-      z-index: 3;
-      animation: show 0.3s; }
+      z-index: 3; }
       @media only screen and (max-width: 43.75em) {
         .header__img-javascript {
           transform: translateY(-10rem); } }
@@ -122,7 +121,9 @@ body {
             transform: scale(1.4) translateY(-10rem); } }
         @media only screen and (max-width: 43.75em) {
           .header__img-javascript:hover {
-            transform: scale(1.4) translateY(-5rem); } }
+            transform: scale(1) translateY(-5rem);
+            z-index: 3;
+            border: none; } }
     .header__img-css {
       position: absolute;
       transform: translateX(-7rem);
@@ -142,7 +143,9 @@ body {
             transform: scale(1.4) translateX(-4rem); } }
         @media screen and (max-width: 28.125em) {
           .header__img-css:hover {
-            transform: scale(1.4) translate(-3rem, 2rem); } }
+            transform: scale(1) translate(-3rem, 2rem);
+            z-index: 2;
+            border: none; } }
     .header__img-html {
       position: absolute;
       transform: translateX(7rem); }
@@ -161,7 +164,9 @@ body {
             transform: scale(1.4) translateX(5rem); } }
         @media screen and (max-width: 28.125em) {
           .header__img-html:hover {
-            transform: scale(1.4) translate(4rem, 2rem); } }
+            transform: scale(1) translate(4rem, 2rem);
+            z-index: 1;
+            border: 0; } }
 
 .btn-main:link,
 .btn-main:visited {
@@ -248,7 +253,7 @@ body {
     grid-row: 2 / 3;
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(#da4453, #89216b);
+    background-image: linear-gradient(#a8ff78, #78ffd6);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 66.875em) {
@@ -317,7 +322,8 @@ body {
   perspective: 15000px;
   backface-visibility: hidden;
   cursor: pointer;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transform: scale(1); }
   @media only screen and (max-width: 66.875em) {
     .features__con {
       width: 70rem;

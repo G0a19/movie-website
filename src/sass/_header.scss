@@ -113,7 +113,6 @@
       position: absolute;
       transform: translateY(-13rem);
       z-index: 3;
-      animation: show 0.3s;
 
       @media only screen and (max-width: $med) {
         transform: translateY(-10rem);
@@ -133,7 +132,9 @@
         }
 
         @media only screen and (max-width: $med) {
-          transform: scale(1.4) translateY(-5rem);
+          transform: scale(1) translateY(-5rem);
+          z-index: 3;
+          border: none;
         }
       }
     }
@@ -161,7 +162,9 @@
         }
 
         @media screen and (max-width: $small-very) {
-          transform: scale(1.4) translate(-3rem, 2rem);
+          transform: scale(1) translate(-3rem, 2rem);
+          z-index: 2;
+          border: none;
         }
       }
     }
@@ -188,7 +191,9 @@
         }
 
         @media screen and (max-width: $small-very) {
-          transform: scale(1.4) translate(4rem, 2rem);
+          transform: scale(1) translate(4rem, 2rem);
+          z-index: 1;
+          border: 0;
         }
       }
     }
