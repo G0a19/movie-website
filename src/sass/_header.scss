@@ -94,13 +94,17 @@
     position: relative;
 
     @media only screen and (max-width: $med) {
-      grid-column: 1 / -1 !important;
-      grid-row: 4 / span 2 !important;
+      grid-column: 1 / -1;
+      grid-row: 4 / span 2;
     }
 
     @media only screen and (max-width: $small-very) {
-      grid-column: 1 / -1 !important;
-      grid-row: 3 / span 3 !important;
+      grid-column: 1 / -1;
+      grid-row: 3 / span 3;
+    }
+
+    @media screen and (max-width: $small-very) {
+      grid-row: 3 / -1;
     }
 
     &-javascript {
