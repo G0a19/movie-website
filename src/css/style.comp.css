@@ -315,12 +315,12 @@ body {
       justify-content: space-around; } }
 
 .features__con {
+  display: block;
   transition: all 0.4s;
   width: 40rem;
   height: 80%;
   position: relative;
   perspective: 15000px;
-  transition: all 0.7s ease-in-out;
   backface-visibility: hidden;
   cursor: pointer;
   border-radius: 5px; }
@@ -657,6 +657,17 @@ body {
     100% {
       opacity: 1;
       transform: skewX(0deg) translateX(0); } } }
+
+.show-card {
+  animation: show-card 0.4s; }
+
+@keyframes show-card {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
 .nav {
   width: 100%;

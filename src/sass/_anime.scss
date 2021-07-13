@@ -131,3 +131,21 @@
     }
   }
 }
+
+///////////////////////////////////// cards
+
+.show-card {
+  animation: show-card 0.4s;
+}
+
+@keyframes show-card {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

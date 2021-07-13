@@ -120,12 +120,12 @@
 }
 
 .features__con {
+  display: block;
   transition: all 0.4s;
   width: 40rem;
   height: 80%;
   position: relative;
   perspective: 15000px;
-  transition: all 0.7s ease-in-out;
   backface-visibility: hidden;
   cursor: pointer;
 
