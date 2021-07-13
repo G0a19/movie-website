@@ -346,9 +346,11 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transition: all 0.7s ease-in-out;
     box-shadow: 0rem 1.5rem 3rem grey;
     overflow: hidden; }
+    @media screen and (max-width: 28.125em) {
+      .features__con-front, .features__con-back {
+        transition: none; } }
   .features__con-front {
     transform: rotateY(0);
     border-radius: 5px;
@@ -484,7 +486,8 @@ body {
             justify-content: center; } }
         .story__about-con-title h4 {
           color: #f2fcfe;
-          font-size: 4rem; }
+          font-size: 4rem;
+          display: block; }
           @media only screen and (max-width: 66.875em) {
             .story__about-con-title h4 {
               margin-left: 0.4rem;
@@ -659,7 +662,7 @@ body {
       transform: skewX(0deg) translateX(0); } } }
 
 .show-card {
-  animation: show-card 0.4s; }
+  animation: show-card 0.4s forwards; }
 
 @keyframes show-card {
   0% {

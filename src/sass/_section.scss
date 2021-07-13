@@ -159,9 +159,12 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transition: all 0.7s ease-in-out;
     box-shadow: 0rem 1.5rem 3rem grey;
     overflow: hidden;
+
+    @media screen and (max-width: $small-very) {
+      transition: none;
+    }
   }
 
   &-front {

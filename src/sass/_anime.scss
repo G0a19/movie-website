@@ -135,7 +135,7 @@
 ///////////////////////////////////// cards
 
 .show-card {
-  animation: show-card 0.4s;
+  animation: show-card 0.4s forwards;
 }
 
 @keyframes show-card {
