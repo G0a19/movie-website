@@ -626,6 +626,9 @@ body {
 .scale {
   transform: scale(0); }
 
+.display {
+  display: none; }
+
 .show-story-left {
   animation: show-left 0.4s forwards ease-in-out; }
   @media only screen and (max-width: 33.75em) {
