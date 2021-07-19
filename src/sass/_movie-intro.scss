@@ -54,6 +54,7 @@
       cursor: pointer;
       position: relative;
       fill: white;
+      filter: invert(1);
       width: 20rem;
       animation: show-arrow 0.7s, move-arrow 1s 0.7s infinite;
       transition: all 0.4s;

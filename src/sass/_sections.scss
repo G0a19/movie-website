@@ -113,6 +113,7 @@
 
     &-input:focus + &-svg {
       fill: #eee;
+      filter: invert(1);
     }
   }
 
