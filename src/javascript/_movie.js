@@ -64,7 +64,7 @@ const createHTML = function (movies) {
 const createDetails = async function (movies) {
   movies.forEach(async function (movie, i) {
     const success = await fetch(
-      `http://www.omdbapi.com/?apikey=f69f0628&i=${movie}`
+      `https://www.omdbapi.com/?apikey=f69f0628&i=${movie}`
     );
     const successAfter = await success.json();
     moviesDetails.push(successAfter);
@@ -89,7 +89,7 @@ const findMovie = async function (movie) {
   moviesID = [];
   try {
     const success = await fetch(
-      `http://www.omdbapi.com/?apikey=f69f0628&s=${movie}`
+      `https://www.omdbapi.com/?apikey=f69f0628&s=${movie}`
     );
     const successAfter = await success.json();
     if (successAfter.Response === "False") {
