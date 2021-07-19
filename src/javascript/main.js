@@ -1,3 +1,3 @@
 import "./../css/style.prefix.css";
-import "./_animation";
-import "./_checkbox";
+import "./_header";
+import "./_movie";

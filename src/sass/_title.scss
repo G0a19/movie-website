@@ -1,34 +1,19 @@
-.title-1 {
+.title-h1 {
   font-size: 12rem;
   text-transform: uppercase;
   font-weight: 700;
-  text-align: center;
 
-  @media only screen and (max-width: $med) {
-    font-size: 8rem;
+  @media screen and (max-width: $large-med) {
+    font-size: 10rem;
   }
 
-  @media screen and (max-width: $small-very) {
-    font-size: 7rem;
+  @media screen and (max-width: $med) {
+    font-size: 6rem;
   }
 }
 
-.title-2 {
-  font-size: 6rem;
+.title-h4 {
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-
-  @media only screen and (max-width: $med) {
-    font-size: 4rem;
-  }
-}
-
-.title-4 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 400;
-
-  @media screen and (max-width: $small) {
-    font-size: 2.5rem;
-  }
 }
