@@ -1,7 +1,6 @@
 "use strict";
 
 // import { * } from "core-js/core/object";
-import fetch from "node-fetch";
 import { async } from "regenerator-runtime";
 
 // // http://www.omdbapi.com/?t=spiderman&apikey=42065ad
