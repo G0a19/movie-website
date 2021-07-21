@@ -21,6 +21,10 @@
       grid-column: 2 / span 6;
     }
 
+    @media screen and (max-height: $height-mobile) {
+      grid-column: 3 / span 4;
+    }
+
     @media screen and (max-width: $med) {
       grid-column: 1 / -1;
     }
@@ -41,6 +45,10 @@
         width: 20%;
         height: 100%;
         cursor: pointer;
+
+        @media screen and (max-width: $large-med) {
+          cursor: auto;
+        }
       }
     }
   }
@@ -128,7 +136,7 @@
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    overflow: scroll;
+    overflow-y: auto;
     font-size: 6rem;
 
     @media screen and (max-width: $small) {
@@ -149,6 +157,10 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(6, 1fr);
       cursor: pointer;
+
+      @media screen and (max-width: $large-med) {
+        cursor: auto;
+      }
 
       &-img {
         grid-column: 1 / -1;

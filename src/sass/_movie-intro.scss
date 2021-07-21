@@ -33,6 +33,11 @@
       grid-column: 4 / -1;
       grid-row: 5 / -1;
       background-position: center;
+
+      @media screen and (max-height: $height-mobile-small) {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+      }
     }
   }
 
@@ -58,6 +63,18 @@
       width: 20rem;
       animation: show-arrow 0.7s, move-arrow 1s 0.7s infinite;
       transition: all 0.4s;
+
+      @media screen and (max-width: $large-med) {
+        cursor: auto;
+      }
+
+      @media screen and (max-height: $height-mobile) {
+        width: 15rem;
+      }
+
+      @media screen and (max-height: $height-mobile-small) {
+        width: 10rem;
+      }
     }
 
     &-h1 {

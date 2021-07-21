@@ -23,6 +23,9 @@ body {
   @media screen and (max-width: 35.625em) {
     .title-h1 {
       font-size: 6rem; } }
+  @media screen and (max-height: 37.5em) {
+    .title-h1 {
+      font-size: 4rem; } }
 
 .title-h4 {
   font-size: 2rem;
@@ -109,6 +112,10 @@ body {
         grid-column: 4 / -1;
         grid-row: 5 / -1;
         background-position: center; } }
+  @media screen and (max-width: 69.6875em) and (max-height: 37.5em) {
+    .movie__background {
+      grid-column: 4 / -1;
+      grid-row: 1 / -1; } }
   .movie__info {
     position: relative;
     grid-column: 3 / span 4;
@@ -128,6 +135,15 @@ body {
       width: 20rem;
       animation: show-arrow 0.7s, move-arrow 1s 0.7s infinite;
       transition: all 0.4s; }
+      @media screen and (max-width: 69.6875em) {
+        .movie__info-svg {
+          cursor: auto; } }
+      @media screen and (max-height: 50em) {
+        .movie__info-svg {
+          width: 15rem; } }
+      @media screen and (max-height: 37.5em) {
+        .movie__info-svg {
+          width: 10rem; } }
     .movie__info-h1 {
       overflow: hidden;
       width: 100%;
@@ -177,6 +193,9 @@ body {
     @media screen and (max-width: 69.6875em) {
       .main__slider {
         grid-column: 2 / span 6; } }
+    @media screen and (max-height: 50em) {
+      .main__slider {
+        grid-column: 3 / span 4; } }
     @media screen and (max-width: 35.625em) {
       .main__slider {
         grid-column: 1 / -1; } }
@@ -195,6 +214,9 @@ body {
         width: 20%;
         height: 100%;
         cursor: pointer; }
+        @media screen and (max-width: 69.6875em) {
+          .main__slider-con img {
+            cursor: auto; } }
   .main__search {
     position: relative;
     grid-column: 3 / span 4;
@@ -258,7 +280,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    overflow: scroll;
+    overflow-y: auto;
     font-size: 6rem; }
     @media screen and (max-width: 21.25em) {
       .main__movies {
@@ -275,6 +297,9 @@ body {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(6, 1fr);
       cursor: pointer; }
+      @media screen and (max-width: 69.6875em) {
+        .main__movies-movie {
+          cursor: auto; } }
       .main__movies-movie-img {
         grid-column: 1 / -1;
         grid-row: 1 / span 3;
