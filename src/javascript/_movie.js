@@ -27,6 +27,14 @@ const loadHTML = `
 let moviesDetails = [];
 let moviesID = [];
 
+const timeout = function (s) {
+  return new Promise(function (_, reject) {
+    setTimeout(function () {
+      reject(new Error(`Request took too long! Timeout after ${s} second`));
+    }, s * 1000);
+  });
+};
+
 const find = function () {
   findMovie(search.value);
   search.value = "";
@@ -68,12 +76,19 @@ const createDetails = async function (movies) {
     );
     const successAfter = await success.json();
     moviesDetails.push(successAfter);
+    if (i === 9) {
+      createHTML(moviesDetails);
+    }
   });
 
-  console.log(moviesDetails);
-  setTimeout(() => {
-    createHTML(moviesDetails);
-  }, 500);
+  // console.log(moviesDetails);
+  // setTimeout(() => {
+  //   if (moviesDetails) {
+  //     createHTML(moviesDetails);
+  //   } else {
+  //     conMovies.innerHTML = "have too much long, please try again";
+  //   }
+  // }, 750);
 };
 
 const createID = async function (movies) {
@@ -90,13 +105,12 @@ const findMovie = async function (movie) {
   try {
     const success = await fetch(
       `https://www.omdbapi.com/?apikey=f69f0628&s=${movie}`
-    );
-    const successAfter = await success.json();
-    if (successAfter.Response === "False") {
-      throw new Error(successAfter.Error);
+    ).then((successAfter) => successAfter.json());
+    if (success.Response === "False") {
+      throw new Error(success.Error);
     } else {
-      console.log(successAfter);
-      createID(successAfter);
+      console.log(success);
+      createID(success);
     }
   } catch (err) {
     console.error(err);
