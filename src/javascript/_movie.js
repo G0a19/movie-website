@@ -76,9 +76,9 @@ const createDetails = async function (movies) {
     );
     const successAfter = await success.json();
     moviesDetails.push(successAfter);
-    if (i === 9) {
-      createHTML(moviesDetails);
-    }
+    // if (i === 9) {
+    createHTML(moviesDetails);
+    // }
   });
 
   // console.log(moviesDetails);
@@ -93,7 +93,7 @@ const createDetails = async function (movies) {
 
 const createID = async function (movies) {
   movies.Search.forEach((movie) => moviesID.push(movie.imdbID));
-  //   console.log(moviesID);
+  // console.log(moviesID);
   createDetails(moviesID);
 };
 
@@ -102,10 +102,14 @@ const findMovie = async function (movie) {
   conMovies.insertAdjacentHTML("afterbegin", loadHTML);
   moviesDetails = [];
   moviesID = [];
+
   try {
-    const success = await fetch(
+    const url = await fetch(
       `https://www.omdbapi.com/?apikey=f69f0628&s=${movie}`
-    ).then((successAfter) => successAfter.json());
+    );
+
+    const success = await url.json();
+
     if (success.Response === "False") {
       throw new Error(success.Error);
     } else {
