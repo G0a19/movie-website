@@ -1,2 +1,2 @@
 website url =>
-https://hopeful-elion-704be0.netlify.app/
+https://moviefy-gal.netlify.app/
